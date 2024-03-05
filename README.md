@@ -18,12 +18,12 @@ Ao final do curso, os alunos terão uma forte base teórica em análise multivar
 
 Aproveite a chance de se equipar com as ferramentas e conhecimentos necessários para navegar com confiança no vasto oceano da Ciência de Dados. Faça sua inscrição e comece o curso agora mesmo!
 
-Projeto 1 - Processo de Análise Exploratória Multivariada Para a Área de Marketing
-Projeto 2 - Seleção de Modelos de Machine Learning em Análise Multivariada com Dados Anonimizados
-Projeto 3 - Data Science em Ciências Sociais - Prevendo a Expectativa de Vida Através de Indicadores Socioeconômicos
-Projeto 4 - Data Science em Marketing - Segmentação da Base de Clientes
-Projeto 5 - Data Science em Vendas - Identificando Fatores Latentes Que Influenciam Decisões de Compra
-Projeto 6 - Data Science na Indústria - Redução de Dimensionalidade de Dados de Sensores de Máquinas Industriais
-Projeto 7 - Data Science no Atendimento ao Cliente - Precisão de Churn de Clientes com XGBoost e PySpark
-Projeto 8 - Data Science na Economia - Prevendo Múltiplos Indicadores Baseados em Um Conjunto de Variáveis Macroeconômicas
-Projeto 9 - Data Science no Agronegócio - Previsão de Rendimento de Colheita e Otimização da Irrigação
+* Projeto 1 - Processo de Análise Exploratória Multivariada Para a Área de Marketing
+* Projeto 2 - Seleção de Modelos de Machine Learning em Análise Multivariada com Dados Anonimizados
+* Projeto 3 - Data Science em Ciências Sociais - Prevendo a Expectativa de Vida Através de Indicadores Socioeconômicos
+* Projeto 4 - Data Science em Marketing - Segmentação da Base de Clientes
+* Projeto 5 - Data Science em Vendas - Identificando Fatores Latentes Que Influenciam Decisões de Compra
+* Projeto 6 - Data Science na Indústria - Redução de Dimensionalidade de Dados de Sensores de Máquinas Industriais
+* Projeto 7 - Data Science no Atendimento ao Cliente - Precisão de Churn de Clientes com XGBoost e PySpark
+* Projeto 8 - Data Science na Economia - Prevendo Múltiplos Indicadores Baseados em Um Conjunto de Variáveis Macroeconômicas
+* Projeto 9 - Data Science no Agronegócio - Previsão de Rendimento de Colheita e Otimização da Irrigação
