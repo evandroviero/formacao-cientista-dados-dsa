@@ -117,3 +117,15 @@ A padronização é usada para redimensionar os dados de modo que eles tenham um
 
 ![Alt text](pics/exemplo_normalizacao.png)
 ![Alt text](pics/exemplo_padronizacao.png)
+
+## Estatísticas Descritivas Multivariadas
+
+As estatísticas descritivas multivariadas são usadas para resumir e descrever características de conjuntos de dados que contêm múltiplas variáveis. Elas são fundamentais para entender as relações entre diferentes variáveis em um conjunto de dados. Abaixo está uma lista de algumas das estatísticas descritivas multivariadas mais comuns.
+
+**Média Multivariada (Vetor de Médias)**: Representa a média de cada variável individual no conjunto de dados. É um vetor onde cada elemento é a média de uma variável. 
+**Matriz de Covariância**: Mostra a covariância entre cada par de variáveis. A covariância indica o grau em que duas variáveis variam juntas. Na diagonal principal desta matriz estão as variâncias de cada variável. 
+**Matriz de Correlação:** Semelhante à matriz de covariância, mas normalizada para ter valores entre -1 e 1. Esta matriz mostra a correlação entre pares de variáveis, indicando como uma variável pode prever a outra. 
+**Intervalo (Range)**: O intervalo de cada variável, que é a diferença entre o valor máximo e mínimo. 
+Desvio Padrão e Variância: Medidas de dispersão para cada variável, indicando quão espalhados estão os dados em torno da média. 
+**Quantis, incluindo Quartis e Percentis**: Estes descrevem a distribuição dos dados dividindo o conjunto de dados em intervalos iguais. Os quartis são os mais comuns, dividindo os dados em quatro partes iguais. 
+**Escores Z**: Indicam quantos desvios padrão um elemento está da média. São úteis para identificar outliers em dados multivariados.
