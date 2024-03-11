@@ -129,3 +129,129 @@ As estatísticas descritivas multivariadas são usadas para resumir e descrever 
 Desvio Padrão e Variância: Medidas de dispersão para cada variável, indicando quão espalhados estão os dados em torno da média. 
 **Quantis, incluindo Quartis e Percentis**: Estes descrevem a distribuição dos dados dividindo o conjunto de dados em intervalos iguais. Os quartis são os mais comuns, dividindo os dados em quatro partes iguais. 
 **Escores Z**: Indicam quantos desvios padrão um elemento está da média. São úteis para identificar outliers em dados multivariados.
+
+
+## Testes Estatísticos Multivariados
+
+Os Testes de Hipóteses para Médias Multivariadas são essenciais para entender se as médias de dois ou mais grupos são significativamente diferentes, considerando múltiplas variáveis ao mesmo tempo. 
+
+Abaixo estão alguns dos testes mais comuns nessa categoria.
+
+## Técnicas de Amostragem Multivariada
+
+Uso de técnicas de amostragem multivariada faz parte do processo de coletar e analisar dados que envolvem diversas variáveis. Estas técnicas permitem extrair amostrar de população de maneira que se possa fazer inferências estatísticas sobre múltiplas variáveis ao mesmo tempo.
+
+### Amostragem Aleatória Simples
+Cada membro da população tem a mesma probabilidade de ser selecionado na amostra. Esta técnica é aplicada quando as variáveis são independentes e identicamente distribuídas.
+
+### Amostragem Estratificada
+A população é dividida em subgrupos (estratos) que são mutuamente exclusivos e coletivamente exaustivos. Uma amostra aleatória é então tirada de cada estrato. Esta abordagem é útil quando as variáveis exibem diferentes distribuições em diferentes subgrupos da população.
+
+### Amostragem por conglomerados
+A população é dividida em conglomerados e uma amostra aleatória de conglomerados é selecionada. Todas as unidades dentro dos conglomerados escolhidps são incluídas na amostra. Isso é útil quando a coleta de dados de toda a população é logística ou economicamente inviável.
+
+### Amostragem Sistemática
+Após determinar o tamanho da amostra, seleciona-se um ponto de partida aleatório e depois inclui-se cada k-ésimo de elemento da população na amostra. Este método é frequentemente usado quando se tem uma lista ordenada da população
+
+### Amostragem Multinível
+Usada em dados hierárquicos ou aninhados, onde a estrutura de dados não é plana, mas aninhada em diferentes níveis, por exemplo, alunos dentro da classe, que estão dentro da escola.
+
+### Amostragem Adaptativa
+Modifica o esquema de amostragem com base nos dados coletados. Por exemplo, se uma variável rara é encontrada, a amostragem pode ser ajustada para aumentar a probabilidade de incluir elementos semelhantes.
+
+### Amostragem de Resposta Dirigida
+Utilizada principalemte para dados com dependências complexas entre variáveis, como em redes sociais, onde a amostragem de um indivíduo aumenta a probabilidade de amostrar seus contatos.
+
+### Amostragemde Bootstrap
+Envolve a reamostragem com substituição da amostra original, permitindo a avaliação da variabilidade das estimativas estatísticas.
+
+
+**Ao escolher uma técnica de amostragem multivaria, deve-se considerar a natureza dos dados, os objetivos da análise, o orçamento disponível e as limitações logísticas. A escolha correta da técnica de amostragem é essencial para garantir que as inferências feitas a partir da amostra sejam válidas para a população maior.**
+
+
+
+## Teste T² de Hotelling
+
+**Definição**
+
+É a extensão multivariada do teste t para duas amostras. Utilizado para testar a igualdade das médias de dois grupos. Requer que as amostras sejam independentes e que os dados sigam uma distribuição normal multivariada.
+
+O Teste T² de Hotelling, nomeado em homenagem a Harold Hotelling, é um teste estatístico multivariado usado para comparar as médias de dois grupos multivariados. É a extensão multivariada do teste t de Student, que é usado para comparar as médias de dois grupos quando há apenas uma variável dependente. O Teste T² de Hotelling é aplicado quando há duas ou mais variáveis dependentes.
+
+**Comparação de Médias Multivariadas**
+
+O teste é usado para determinar se há uma diferença significativa entre as médias de dois grupos em múltiplas variáveis dependentes simultaneamente.
+
+**Hipóteses**
+
+- Hipótese Nula (H0): As médias multivariadas dos dois grupos são iguais.
+- Hipótese Alternativa (H1): As médias multivariadas dos dois grupos são diferentes.
+
+**Requisitos de Dados**
+
+O teste assume que os dados de cada grupo são amostras aleatórias independentes e que seguem uma distribuição normal multivariada.
+
+**Matriz de Covariância**
+
+A análise envolve a utilização da matriz de covariância das variáveis dependentes. O teste leva em consideração não apenas as variáveis em si, mas também a relação (covariância) entre elas.
+
+**Estatística de Teste**
+
+A estatística de teste T² é calculada com base nas médias dos grupos, nas matrizes de covariância e no tamanho da amostra. Essa estatística é depois convertida em uma estatística F para facilitar a obtenção do valor p.
+
+**Interpretação**
+
+Se o valor p calculado for menor que o nível de significância escolhido (geralmente 0.05), a hipótese nula é rejeitada, indicando que há uma diferença significativa entre as médias dos grupos.
+
+**Aplicações do Teste T² de Hotelling**
+
+É amplamente utilizado em campos como a pesquisa biomédica, ciências sociais, marketing e outros, onde a comparação de múltiplas variáveis é fundamental.
+
+Pode ser usado para testar diferenças em médias de grupos em estudos pré e pós-tratamento, estudos comparativos entre diferentes grupos demográficos, entre outros.
+
+O Teste T² de Hotelling é uma ferramenta poderosa para análise multivariada, permitindo aos Cientistas de Dados testar hipóteses complexas sobre as relações entre múltiplas variáveis em diferentes grupos.
+
+
+## Teste T² de Hotelling na Prática com Linguagem Python
+
+**Objetivo da Análise:**
+
+O estudo visa investigar se existem diferenças significativas nas características físicas (altura e peso) entre atletas de dois esportes diferentes. O Teste T² de Hotelling será utilizado para determinar se as médias multivariadas de altura e peso são significativamente diferentes entre os dois grupos de atletas.
+
+**Grupos de Estudo:**
+
+- Grupo 1: Atletas de basquete. Espera-se que sejam geralmente mais altos e mais pesados devido à natureza do esporte.
+- Grupo 2: Atletas de ginástica artística. Estes atletas tendem a ser mais leves e de estatura menor, características que são benéficas para o seu esporte.
+
+**Variáveis Dependentes:**
+
+- Altura (cm): Medida da altura dos atletas.
+- Peso (kg): Medida do peso dos atletas.
+
+**Geração de Dados Sintéticos:**
+
+Dados para os atletas de basquete (Grupo 1) e os atletas de ginástica artística (Grupo 2) serão gerados sinteticamente com distribuições multivariadas normais. As médias e covariâncias foram escolhidas para refletir as expectativas reais desses atletas em termos de altura e peso.
+
+**Aplicação do Teste T² de Hotelling:**
+
+O Teste T² de Hotelling é aplicado para comparar as médias de altura e peso entre os dois grupos de atletas. Este teste foi escolhido por sua capacidade de avaliar simultaneamente a diferença nas médias de duas variáveis dependentes (altura e peso), considerando a correlação entre elas.
+
+**Importância da Análise:**
+
+Este estudo pode fornecer informações valiosas sobre como diferentes esportes estão associados a diferentes características físicas. Esses insights podem ser úteis para treinadores e cientistas do esporte na identificação de talentos e no desenvolvimento de programas de treinamento específicos para cada esporte. Além disso, pode contribuir para a compreensão de como as demandas físicas de cada esporte moldam as características corporais dos atletas.
+
+**Definição das Hipóteses:**
+
+Hipótese Nula (H0)
+
+A hipótese nula em um teste estatístico é geralmente uma declaração de "nenhuma diferença" ou "nenhum efeito". No contexto deste estudo, a hipótese nula seria:
+
+H0: Não existem diferenças significativas nas médias multivariadas de altura e peso entre os atletas de basquete (Grupo 1) e os atletas de ginástica artística (Grupo 2). Isso significa que, sob a hipótese nula, qualquer diferença observada nas médias de altura e peso entre os dois grupos é atribuída ao acaso.
+
+Hipótese Alternativa (H1)
+
+A hipótese alternativa é o que você testa contra a hipótese nula. Normalmente, ela sugere que existe um efeito ou diferença. Para este estudo, a hipótese alternativa seria:
+
+H1: Existem diferenças significativas nas médias multivariadas de altura e peso entre os atletas de basquete (Grupo 1) e os atletas de ginástica artística (Grupo 2). Sob a hipótese alternativa, as diferenças observadas são suficientemente grandes para serem consideradas estatisticamente significativas e não devidas ao acaso.
+
+A aplicação do Teste T² de Hotelling permitirá avaliar essas hipóteses considerando tanto a altura quanto o peso simultaneamente, levando em conta a correlação entre estas duas variáveis.
